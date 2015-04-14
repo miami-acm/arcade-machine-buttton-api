@@ -82,9 +82,9 @@ public class Buttons {
 	 * @param key the character keycode to be tested against
 	 */
 	public static boolean isPlayer2Button(char key) {
-		return key == PLAYER_2_BUTTON_1 || key == PLAYER_1_BUTTON_2 ||
-			key == PLAYER_2_BUTTON_3 || key == PLAYER_1_BUTTON_4 ||
-			key == PLAYER_2_BUTTON_5 || key == PLAYER_1_BUTTON_6;
+		return key == PLAYER_2_BUTTON_1 || key == PLAYER_2_BUTTON_2 ||
+			key == PLAYER_2_BUTTON_3 || key == PLAYER_2_BUTTON_4 ||
+			key == PLAYER_2_BUTTON_5 || key == PLAYER_2_BUTTON_6;
 	}
 
 	/**
