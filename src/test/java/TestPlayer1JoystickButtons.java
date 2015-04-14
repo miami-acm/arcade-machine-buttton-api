@@ -12,8 +12,8 @@ public class TestPlayer1JoystickButtons {
 		assertTrue(Buttons.isAnyKey(key));
 		assertTrue(Buttons.isPlayer1Key(key));
 		assertTrue(Buttons.isPlayer1Joystick(key));
-		assertTrue(Buttons.isAnyButton(key));
 
+		assertFalse(Buttons.isAnyButton(key));
 		assertFalse(Buttons.isPlayer2Joystick(key));
 		assertFalse(Buttons.isPlayer2Key(key));
 		assertFalse(Buttons.isStartButton(key));
@@ -29,8 +29,8 @@ public class TestPlayer1JoystickButtons {
 		assertTrue(Buttons.isAnyKey(key));
 		assertTrue(Buttons.isPlayer1Key(key));
 		assertTrue(Buttons.isPlayer1Joystick(key));
-		assertTrue(Buttons.isAnyButton(key));
 
+		assertFalse(Buttons.isAnyButton(key));
 		assertFalse(Buttons.isPlayer2Joystick(key));
 		assertFalse(Buttons.isPlayer2Key(key));
 		assertFalse(Buttons.isStartButton(key));
@@ -46,8 +46,8 @@ public class TestPlayer1JoystickButtons {
 		assertTrue(Buttons.isAnyKey(key));
 		assertTrue(Buttons.isPlayer1Key(key));
 		assertTrue(Buttons.isPlayer1Joystick(key));
-		assertTrue(Buttons.isAnyButton(key));
 
+		assertFalse(Buttons.isAnyButton(key));
 		assertFalse(Buttons.isPlayer2Joystick(key));
 		assertFalse(Buttons.isPlayer2Key(key));
 		assertFalse(Buttons.isStartButton(key));
@@ -63,8 +63,8 @@ public class TestPlayer1JoystickButtons {
 		assertTrue(Buttons.isAnyKey(key));
 		assertTrue(Buttons.isPlayer1Key(key));
 		assertTrue(Buttons.isPlayer1Joystick(key));
-		assertTrue(Buttons.isAnyButton(key));
 
+		assertFalse(Buttons.isAnyButton(key));
 		assertFalse(Buttons.isPlayer2Joystick(key));
 		assertFalse(Buttons.isPlayer2Key(key));
 		assertFalse(Buttons.isStartButton(key));
@@ -80,8 +80,8 @@ public class TestPlayer1JoystickButtons {
 		assertTrue(Buttons.isAnyKey(key));
 		assertTrue(Buttons.isPlayer1Key(key));
 		assertTrue(Buttons.isPlayer1Joystick(key));
-		assertTrue(Buttons.isAnyButton(key));
 
+		assertFalse(Buttons.isAnyButton(key));
 		assertFalse(Buttons.isPlayer2Joystick(key));
 		assertFalse(Buttons.isPlayer2Key(key));
 		assertFalse(Buttons.isStartButton(key));
@@ -97,8 +97,8 @@ public class TestPlayer1JoystickButtons {
 		assertTrue(Buttons.isAnyKey(key));
 		assertTrue(Buttons.isPlayer1Key(key));
 		assertTrue(Buttons.isPlayer1Joystick(key));
-		assertTrue(Buttons.isAnyButton(key));
 
+		assertFalse(Buttons.isAnyButton(key));
 		assertFalse(Buttons.isPlayer2Joystick(key));
 		assertFalse(Buttons.isPlayer2Key(key));
 		assertFalse(Buttons.isStartButton(key));
@@ -114,8 +114,8 @@ public class TestPlayer1JoystickButtons {
 		assertTrue(Buttons.isAnyKey(key));
 		assertTrue(Buttons.isPlayer1Key(key));
 		assertTrue(Buttons.isPlayer1Joystick(key));
-		assertTrue(Buttons.isAnyButton(key));
 
+		assertFalse(Buttons.isAnyButton(key));
 		assertFalse(Buttons.isPlayer2Joystick(key));
 		assertFalse(Buttons.isPlayer2Key(key));
 		assertFalse(Buttons.isStartButton(key));
@@ -129,10 +129,10 @@ public class TestPlayer1JoystickButtons {
 
 		assertTrue(Buttons.isPlayer1Joystick(key));
 		assertTrue(Buttons.isPlayer1Key(key));
-		assertTrue(Buttons.isAnyButton(key));
 		assertTrue(Buttons.isJoystick(key));
 		assertTrue(Buttons.isAnyKey(key));
 
+		assertFalse(Buttons.isAnyButton(key));
 		assertFalse(Buttons.isPlayer2Joystick(key));
 		assertFalse(Buttons.isPlayer2Key(key));
 		assertFalse(Buttons.isStartButton(key));
