@@ -1,0 +1,20 @@
+apply plugin: 'java'
+
+packageName = 'Arcade Machine Button API'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': packageName,
+                   'Implementation-Version': version
+    }
+    baseName = project.name
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
