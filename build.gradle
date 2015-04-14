@@ -18,3 +18,19 @@ jar {
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
 }
+
+test {
+    beforeTest { descriptor ->
+       logger.lifecycle("Running test: " + descriptor)
+    }
+
+    testLogging.showStandardStreams = true
+
+    onOutput { descriptor, event ->
+       logger.lifecycle("Test: " + descriptor + " produced standard out/err: " + event.message )
+    }
+}
+
+dependencies {
+    testCompile("junit:junit:4.12")
+}
