@@ -37,12 +37,12 @@ public class Buttons {
 
 	/**
 	 * Return true if the given key is any fight pad button. Does not include
-	 * start buttons.
+	 * start buttons or joystick directions.
 	 *
 	 * @param key the character keycode to be tested against
 	 */
 	public static boolean isAnyButton(char key) {
-		return isPlayer1Key(key) || isPlayer2Key(key);
+		return isPlayer1Button(key) || isPlayer2Button(key);
 	}
 
 	/**
