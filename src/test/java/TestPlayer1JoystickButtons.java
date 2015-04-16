@@ -5,23 +5,6 @@ import org.junit.Test;
 
 public class TestPlayer1JoystickButtons {
 	@Test
-	public void testQ() {
-		char key = 'q';
-
-		assertTrue(Buttons.isJoystick(key));
-		assertTrue(Buttons.isAnyKey(key));
-		assertTrue(Buttons.isPlayer1Key(key));
-		assertTrue(Buttons.isPlayer1Joystick(key));
-
-		assertFalse(Buttons.isAnyButton(key));
-		assertFalse(Buttons.isPlayer2Joystick(key));
-		assertFalse(Buttons.isPlayer2Key(key));
-		assertFalse(Buttons.isStartButton(key));
-		assertFalse(Buttons.isPlayer1Button(key));
-		assertFalse(Buttons.isPlayer2Button(key));
-	}
-
-	@Test
 	public void testW() {
 		char key = 'w';
 
@@ -37,24 +20,6 @@ public class TestPlayer1JoystickButtons {
 		assertFalse(Buttons.isPlayer1Button(key));
 		assertFalse(Buttons.isPlayer2Button(key));
 	}
-
-	@Test
-	public void testE() {
-		char key = 'e';
-
-		assertTrue(Buttons.isJoystick(key));
-		assertTrue(Buttons.isAnyKey(key));
-		assertTrue(Buttons.isPlayer1Key(key));
-		assertTrue(Buttons.isPlayer1Joystick(key));
-
-		assertFalse(Buttons.isAnyButton(key));
-		assertFalse(Buttons.isPlayer2Joystick(key));
-		assertFalse(Buttons.isPlayer2Key(key));
-		assertFalse(Buttons.isStartButton(key));
-		assertFalse(Buttons.isPlayer1Button(key));
-		assertFalse(Buttons.isPlayer2Button(key));
-	}
-
 	@Test
 	public void testA() {
 		char key = 'a';
@@ -90,23 +55,6 @@ public class TestPlayer1JoystickButtons {
 	}
 
 	@Test
-	public void testZ() {
-		char key = 'z';
-
-		assertTrue(Buttons.isJoystick(key));
-		assertTrue(Buttons.isAnyKey(key));
-		assertTrue(Buttons.isPlayer1Key(key));
-		assertTrue(Buttons.isPlayer1Joystick(key));
-
-		assertFalse(Buttons.isAnyButton(key));
-		assertFalse(Buttons.isPlayer2Joystick(key));
-		assertFalse(Buttons.isPlayer2Key(key));
-		assertFalse(Buttons.isStartButton(key));
-		assertFalse(Buttons.isPlayer1Button(key));
-		assertFalse(Buttons.isPlayer2Button(key));
-	}
-
-	@Test
 	public void testX() {
 		char key = 'x';
 
@@ -114,23 +62,6 @@ public class TestPlayer1JoystickButtons {
 		assertTrue(Buttons.isAnyKey(key));
 		assertTrue(Buttons.isPlayer1Key(key));
 		assertTrue(Buttons.isPlayer1Joystick(key));
-
-		assertFalse(Buttons.isAnyButton(key));
-		assertFalse(Buttons.isPlayer2Joystick(key));
-		assertFalse(Buttons.isPlayer2Key(key));
-		assertFalse(Buttons.isStartButton(key));
-		assertFalse(Buttons.isPlayer1Button(key));
-		assertFalse(Buttons.isPlayer2Button(key));
-	}
-
-	@Test
-	public void testC() {
-		char key = 'c';
-
-		assertTrue(Buttons.isPlayer1Joystick(key));
-		assertTrue(Buttons.isPlayer1Key(key));
-		assertTrue(Buttons.isJoystick(key));
-		assertTrue(Buttons.isAnyKey(key));
 
 		assertFalse(Buttons.isAnyButton(key));
 		assertFalse(Buttons.isPlayer2Joystick(key));

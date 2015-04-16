@@ -6,19 +6,20 @@ import org.junit.Test;
 public class TestNotKeys {
 	@Test
 	public void testNotButtons() {
-		String keys = "`1234567890-=[]\\\'";
+		String keys = "`1234567890-=[]\\'ynizqec,~!@#$%^&*()_+{}|:YNIZQEC<>?\"";
+		String error = " should not be a valid key, but it is.";
 
 		for (char key : keys.toCharArray()) {
-			assertFalse(Buttons.isJoystick(key));
-			assertFalse(Buttons.isAnyKey(key));
-			assertFalse(Buttons.isPlayer1Key(key));
-			assertFalse(Buttons.isPlayer1Joystick(key));
-			assertFalse(Buttons.isAnyButton(key));
-			assertFalse(Buttons.isPlayer2Joystick(key));
-			assertFalse(Buttons.isPlayer2Key(key));
-			assertFalse(Buttons.isStartButton(key));
-			assertFalse(Buttons.isPlayer1Button(key));
-			assertFalse(Buttons.isPlayer2Button(key));
+			assertFalse(key + error, Buttons.isJoystick(key));
+			assertFalse(key + error, Buttons.isAnyKey(key));
+			assertFalse(key + error, Buttons.isPlayer1Key(key));
+			assertFalse(key + error, Buttons.isPlayer1Joystick(key));
+			assertFalse(key + error, Buttons.isAnyButton(key));
+			assertFalse(key + error, Buttons.isPlayer2Joystick(key));
+			assertFalse(key + error, Buttons.isPlayer2Key(key));
+			assertFalse(key + error, Buttons.isStartButton(key));
+			assertFalse(key + error, Buttons.isPlayer1Button(key));
+			assertFalse(key + error, Buttons.isPlayer2Button(key));
 		}
 	}
 }
