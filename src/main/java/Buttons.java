@@ -1,7 +1,7 @@
 import java.util.HashSet;
 
 public class Buttons {
-	public static final int API_VERSION = 1;
+	public static final int API_VERSION = 2;
 
 	public static final char PLAYER_1_START = 's';
 	public static final char PLAYER_1_JOYSTICK_UP = 'w';
