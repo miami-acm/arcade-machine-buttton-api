@@ -5,13 +5,9 @@ public class Buttons {
 
 	public static final char PLAYER_1_START = 's';
 	public static final char PLAYER_1_JOYSTICK_UP = 'w';
-	public static final char PLAYER_1_JOYSTICK_UP_RIGHT = 'e';
 	public static final char PLAYER_1_JOYSTICK_RIGHT = 'd';
-	public static final char PLAYER_1_JOYSTICK_DOWN_RIGHT = 'c';
 	public static final char PLAYER_1_JOYSTICK_DOWN = 'x';
-	public static final char PLAYER_1_JOYSTICK_DOWN_LEFT = 'z';
 	public static final char PLAYER_1_JOYSTICK_LEFT = 'a';
-	public static final char PLAYER_1_JOYSTICK_UP_LEFT = 'q';
 	public static final char PLAYER_1_BUTTON_1 = 'r';
 	public static final char PLAYER_1_BUTTON_2 = 't';
 	public static final char PLAYER_1_BUTTON_3 = 'f';
@@ -21,13 +17,9 @@ public class Buttons {
 
 	public static final char PLAYER_2_START = 'j';
 	public static final char PLAYER_2_JOYSTICK_UP = 'u';
-	public static final char PLAYER_2_JOYSTICK_UP_RIGHT = 'i';
 	public static final char PLAYER_2_JOYSTICK_RIGHT = 'k';
-	public static final char PLAYER_2_JOYSTICK_DOWN_RIGHT = ',';
 	public static final char PLAYER_2_JOYSTICK_DOWN = 'm';
-	public static final char PLAYER_2_JOYSTICK_DOWN_LEFT = 'n';
 	public static final char PLAYER_2_JOYSTICK_LEFT = 'h';
-	public static final char PLAYER_2_JOYSTICK_UP_LEFT = 'y';
 	public static final char PLAYER_2_BUTTON_1 = 'o';
 	public static final char PLAYER_2_BUTTON_2 = 'p';
 	public static final char PLAYER_2_BUTTON_3 = 'l';
@@ -95,10 +87,7 @@ public class Buttons {
 	 */
 	public static boolean isPlayer1Joystick(char key) {
 		return key == PLAYER_1_JOYSTICK_LEFT || key == PLAYER_1_JOYSTICK_RIGHT ||
-			key == PLAYER_1_JOYSTICK_UP || key == PLAYER_1_JOYSTICK_DOWN ||
-			key == PLAYER_1_JOYSTICK_UP_RIGHT || key == PLAYER_1_JOYSTICK_UP_LEFT ||
-			key == PLAYER_1_JOYSTICK_DOWN_LEFT || key == PLAYER_1_JOYSTICK_UP_LEFT ||
-			key == PLAYER_1_JOYSTICK_DOWN_RIGHT;
+			key == PLAYER_1_JOYSTICK_UP || key == PLAYER_1_JOYSTICK_DOWN;
 	}
 
 	/**
@@ -109,10 +98,7 @@ public class Buttons {
 	 */
 	public static boolean isPlayer2Joystick(char key) {
 		return key == PLAYER_2_JOYSTICK_LEFT || key == PLAYER_2_JOYSTICK_RIGHT ||
-			key == PLAYER_2_JOYSTICK_UP || key == PLAYER_2_JOYSTICK_DOWN ||
-			key == PLAYER_2_JOYSTICK_UP_RIGHT || key == PLAYER_2_JOYSTICK_UP_LEFT ||
-			key == PLAYER_2_JOYSTICK_DOWN_LEFT || key == PLAYER_2_JOYSTICK_UP_LEFT ||
-			key == PLAYER_2_JOYSTICK_DOWN_RIGHT;
+			key == PLAYER_2_JOYSTICK_UP || key == PLAYER_2_JOYSTICK_DOWN;
 	}
 
 	/**
