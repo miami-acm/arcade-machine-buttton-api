@@ -6,10 +6,9 @@ import org.junit.Test;
 public class TestNotKeys {
 	@Test
 	public void testNotButtons() {
-		char[] keys = {'`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0',
-			'-', '=', '[', ']', '\\', '\''};
+		String keys = "`1234567890-=[]\\\'";
 
-		for (char key : keys) {
+		for (char key : keys.toCharArray()) {
 			assertFalse(Buttons.isJoystick(key));
 			assertFalse(Buttons.isAnyKey(key));
 			assertFalse(Buttons.isPlayer1Key(key));
