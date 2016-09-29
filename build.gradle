@@ -1,16 +1,13 @@
 apply plugin: 'java'
 
-packageName = 'Arcade Machine Button API'
-version = '1.0.0'
-
 repositories {
     mavenCentral()
 }
 
 jar {
     manifest {
-        attributes 'Implementation-Title': packageName,
-                   'Implementation-Version': version
+        attributes 'Implementation-Title': 'Arcade Machine Button API',
+                   'Implementation-Version': '1.0.0'
     }
     baseName = project.name
 }
